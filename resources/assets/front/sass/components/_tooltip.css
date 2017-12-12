@@ -1,0 +1,28 @@
+[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  top: -8px;
+  left: -15px;
+  width: 200px;
+  z-index: 1;
+  display: none;
+  padding: 13px 22px;
+  background: rgba(255,255,255,.97);
+  border-radius: 4px;
+  color: #474c53;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: left;
+  cursor: auto;
+}
+
+@mixin bp tablet {
+  .tooltip {
+    width: 300px;
+  }
+}

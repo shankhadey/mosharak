@@ -1,0 +1,89 @@
+html.hasModal {
+  body {
+    overflow: hidden;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: none;
+  padding: 0 20px;
+  background: rgba(50,50,62,0.9);
+  -webkit-overflow-scrolling: touch; /* fix safari scroll bug */
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.modal-body {
+  position: relative;
+  margin: 80px auto;
+  max-width: 1180px;
+}
+
+.modal-content {
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+
+  h1 {
+    text-align: center;
+  }
+
+  @mixin bp tablet {
+    padding: 100px;
+  }
+}
+
+.modal .send-request {
+  padding: 100px 20px;
+  border-radius: 10px;
+  background-position-y: 62px;
+  margin: auto;
+
+  h1 {
+    margin-bottom: 85px;
+    max-width: 500px;
+  }
+
+  form {
+    max-width: 1020px;
+  }
+
+  .button {
+    display: block;
+    margin: 42px auto;
+    max-width: 640px;
+  }
+
+  .button-details {
+    margin: 55px 0 0;
+    color: #474c53;
+  }
+
+  @mixin lp mobile {
+    padding: 30px 0;
+    background-position-y: 15px;
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    input {
+      padding-left: 15px;
+    }
+  }
+}

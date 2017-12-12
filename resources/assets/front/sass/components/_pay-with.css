@@ -1,0 +1,253 @@
+.pay-with {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+
+  .wrapper {
+    padding-bottom: 75px;
+  }
+
+  @mixin bp tablet {
+    padding-bottom: 380px;
+
+    .wrapper > h1 ~ p {
+      margin-bottom: 150px;
+    }
+  }
+
+  @media (min-width: 760px) and (max-width: 909px) {
+    padding-bottom: 0;
+    margin-bottom: -75px;
+  }
+
+  .text {
+    min-width: 250px;
+
+    @mixin bp tablet {
+      max-height: 176px;
+    }
+
+    @media (max-width: 979px) {
+      padding-right: 20px;
+      margin-left: -20px;
+    }
+
+    @media (max-width: 909px) {
+      padding-right: 25%;
+      margin-left: 0;
+      margin-bottom: 70px;
+    }
+  }
+
+  .columns {
+    @media (max-width: 909px) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .section-img-wrap {
+    position: absolute;
+    background-color: white;
+
+    &.pay-1 {
+      width: 375px;
+      left: -100px;
+      margin-bottom: 20px;
+      z-index: 1;
+
+      @mixin bp desktop {
+        top: 180px;
+        left: -90px;
+      }
+
+      @mixin lp tablet {
+        position: relative;
+        top: 0;
+        margin-bottom: 70px;
+      }
+
+      .section-img {
+        padding-bottom: 73%;
+        background-image: url("../img/investors-traders-funds/paywith/1.jpg");
+        @mixin breakpoint retina {
+          background-image: url("../img/investors-traders-funds/paywith/1@2x.jpg");
+        }
+      }
+
+      .pay-1-add {
+        position: absolute;
+        width: 338px;
+        padding-bottom: 65%;
+        left: 180px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../img/investors-traders-funds/paywith/curvy-line-1.png");
+        @mixin breakpoint retina {
+          background-image: url("../img/investors-traders-funds/paywith/curvy-line-1@2x.png");
+        }
+
+        @mixin bp tablet {
+          display: none;
+        }
+
+        @mixin bp desktop {
+          display: block;
+        }
+      }
+    }
+
+    &.pay-2 {
+      bottom: -300px;
+      left: 30%;
+      z-index: 2;
+      width: 330px;
+
+      @media (max-width: 979px) {
+        bottom: -285px;
+      }
+
+      @media (max-width: 909px) {
+        position: relative;
+        bottom: 0;
+        right: 50px;
+        margin-right: 0;
+        left: auto;
+        margin-bottom: 70px;
+      }
+
+      @media (max-width: 749px) {
+        right: -40px;
+      }
+
+      .section-img {
+        padding-bottom: 73%;
+        background-image: url("../img/investors-traders-funds/paywith/2.png");
+
+        @mixin breakpoint retina {
+          background-image: url("../img/investors-traders-funds/paywith/2@2x.png");
+        }
+      }
+
+      .pay-2-add {
+        position: absolute;
+        right: -35px;
+        bottom: -50px;
+        @extend .section-img;
+        padding-bottom: 37%;
+        width: 196px;
+        background-image: url("../img/investors-traders-funds/paywith/2-card.png");
+        @mixin breakpoint retina {
+          background-image: url("../img/investors-traders-funds/paywith/2-card@2x.png");
+        }
+      }
+    }
+
+    &.pay-3 {
+      width: 335px;
+      top: 300px;
+      right: -50px;
+
+      @mixin bp desktop {
+        right: 5%;
+      }
+
+      @media (max-width: 1029px) {
+        top: 320px;
+        right: 3%;
+      }
+
+      @media (max-width: 909px) {
+        position: relative;
+        top: 0;
+      }
+
+      @media (max-width: 749px) {
+        margin-bottom: 0px;
+      }
+
+      .section-img {
+        padding-bottom: 73%;
+        background-image: url("../img/investors-traders-funds/paywith/3.jpg");
+        @mixin breakpoint retina {
+          background-image: url("../img/investors-traders-funds/paywith/3@2x.jpg");
+        }
+
+        @media (min-width: 540px) and (max-width: 909px) {
+          position: relative;
+          right: -7%;
+        }
+      }
+
+      .pay-3-add {
+        content: '';
+        position: absolute;
+        width: 254px;
+        padding-bottom: 65%;
+        left: -225px;
+        top: 65%;
+        z-index: -1;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../img/investors-traders-funds/paywith/curvy-line-2.png");
+        @mixin breakpoint retina {
+          background-image: url("../img/investors-traders-funds/paywith/curvy-line-2@2x.png");
+        }
+
+        @media (max-width: 960px) {
+          display: none;
+        }
+
+        @media (max-width: 749px) {
+          left: inherit;
+          right: -66%;
+          top: -475px;
+          background-position: right -5px top;
+          padding-bottom: 150%;
+          background-image: url("../img/investors-traders-funds/paywith/curvy-line-3.png");
+          @mixin breakpoint retina {
+            background-image: url("../img/investors-traders-funds/paywith/curvy-line-3.png");
+          }
+        }
+
+        @media (max-width: 549px) {
+          display: block;
+          right: -105px;
+        }
+        @media (max-width: 499px) {
+          right: -85px;
+        }
+        @media (max-width: 449px) {
+          right: -60px;
+        }
+        @media (max-width: 349px) {
+          right: 15px;
+        }
+        @media(max-width: 320px) {
+          right: 60px;
+        }
+      }
+    }
+  }
+}
+
+.pay-with-icon {
+  z-index: -1;
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  background: url("../img/back-icons/icon009.svg") no-repeat center;
+  background-size: contain;
+
+  @mixin lp tablet {
+    bottom: 5px;
+    right: 0;
+    left: 0;
+  }
+
+  @mixin bp tablet {
+    right: 100px;
+    top: 100px;
+  }
+}
+

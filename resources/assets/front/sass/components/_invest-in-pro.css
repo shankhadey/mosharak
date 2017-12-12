@@ -1,0 +1,19 @@
+.invest-in-pro {
+  .section-img-wrap {
+    max-width: 360px;
+
+    @mixin breakpoint tablet {
+      margin-right: 0;
+    }
+  }
+
+  .section-img {
+    padding-bottom: 100%;
+    background-image: url("../img/investors-traders-funds/invest-in-pro/invest-in-pro.png");
+
+    @mixin breakpoint retina {
+      background-image: url("../img/investors-traders-funds/invest-in-pro/invest-in-pro@2x.png");
+    }
+  }
+}
+

@@ -1,0 +1,39 @@
+.big-title {
+  position: relative;
+  margin: 90px auto 80px;
+  text-align: center;
+
+  h1 {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    background-color: white;
+    color: $gray-light;
+    font-size: 3.6rem;
+    padding: 0 15px;
+    margin: 0;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index:1;
+    left: 20px;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 2px;
+    opacity: .2;
+    background-color: $gray-light;
+  }
+
+  @mixin bp tablet {
+    margin: 180px auto 167px;
+
+    h1 {
+      font-size: 5.6rem;
+      padding: 0 30px;
+    }
+  }
+}

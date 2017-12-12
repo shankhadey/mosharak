@@ -1,0 +1,302 @@
+.topblock {
+  position: relative;
+  z-index: 10;
+  background: $blue;
+  color: white;
+
+  h1 {
+    margin: 0 0 8px;
+    text-align: center;
+    color: white;
+
+    sup {
+      position: relative;
+      top: -6px;
+      left: -1px;
+      font-size: 19px;
+    }
+  }
+
+  @mixin breakpoint tablet {
+    background-size: 1280px auto;
+  }
+
+  strong {
+    font-weight: 400;
+  }
+
+  .features {
+    display: inline-flex;
+    margin-bottom: -44%;
+  }
+
+  h1,
+  .countdown-mini_title {
+    font-weight: 400;
+    max-width: 780px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.topblock_bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.topblock_bg_inner {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: $blue url("../img/grid-blue.svg?v=3") top center no-repeat;
+  background-size: cover;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.topblock-home {
+  margin-bottom: 30%;
+  padding-bottom: 0;
+
+  .countdown {
+    margin: 25px 0 102px;
+  }
+}
+
+.topblock-home + .get-notified {
+  margin-top: 340px;
+
+  @mixin bp tablet {
+    margin-top: 400px;
+  }
+}
+
+.topblock-ico {
+  padding-bottom: 150px;
+  background: #1f1f64 linear-gradient(to bottom, rgb(28,28,77) 0%, rgb(37,37,142) 100%);
+
+  .topblock_bg_inner {
+    opacity: 0.05;
+    background-image: url("../img/grid-white.svg?v=2");
+  }
+}
+
+.topblock_tabs {
+  overflow: hidden;
+  max-width: 860px;
+  margin: auto;
+  box-shadow: 0px 24px 7px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  background-color: rgba(37, 37, 141, 0.5);
+}
+
+.topblock_tabs_list {
+  a {
+    display: block;
+    border: 3px solid #7570ff;
+    padding: 13px 20px;
+    border-image: linear-gradient(to right, #7570ff, #bd5191, #7570ff) 20 20 stretch;
+    color: #fff;
+    text-align: left;
+
+    &:hover {
+      text-decoration: none;
+      color: rgba(255,255,255,0.7);
+    }
+  }
+
+  a + a {
+    margin-top: -3px;
+  }
+
+  span {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.topblock_tabs_info {
+  text-align: center;
+  font-size: 14px;
+  padding: 0 10px 3px;
+  background: linear-gradient(to right, #7570ff, #bd5191, #7570ff);
+
+  a {
+    font-weight: 700;
+    color: #fff;
+  }
+
+  a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+  }
+}
+
+@mixin breakpoint tablet {
+  .topblock-home {
+    margin-bottom: 220px;
+  }
+
+  .topblock-home .features {
+    margin-bottom: -225px;
+  }
+
+  .topblock-home .features + section {
+    margin-top: 365px;
+  }
+
+  .topblock-home .countdown {
+    margin-bottom: 111px;
+  }
+}
+
+@mixin bp tablet {
+  .topblock-home  {
+    margin-bottom: 120px;
+
+    .header {
+      margin-bottom: 26px;
+    }
+
+    .features {
+      margin-bottom: -185px;
+    }
+
+    .header + .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: calc(100vh - 148px);
+    }
+  }
+
+  .topblock_bg_inner {
+    /*
+    top: -500px;
+    right: -500px;
+    bottom: -500px;
+    left: -500px;
+    animation: 400s linear rotate infinite alternate; */
+    transform-origin: center;
+  }
+
+  .topblock_tabs_list {
+    display: flex;
+  }
+
+  .topblock_tabs_info {
+    font-size: 16px;
+  }
+
+  .topblock_tabs_list {
+    a {
+      padding: 23px 45px 21px;
+      width: calc(50% + 1px);
+      font-size: 26px;
+      line-height: 39px;
+      border-image: linear-gradient(to right, #7570ff, #bd5191) 20 20 stretch;
+    }
+
+    a + a {
+      margin-top: 0;
+      border-image: linear-gradient(to right, #bd5191, #7570ff) 20 20 stretch;
+    }
+
+    a:first-child {
+      margin-right: -1px;
+    }
+
+    a:last-child {
+      margin-left: -1px;
+    }
+
+    span {
+      margin: 0 0 2px;
+      font-size: 36px;
+    }
+  }
+}
+
+.topblock_subtitle {
+  margin: 0 0 63px;
+  font-size: 26px;
+  color: #abb4bb;
+  text-align: center;
+}
+
+.topblock-ratings {
+  max-width: 640px;
+  margin: -1px auto 0;
+  border-radius: 0 0 4px 4px;
+  border: 1px solid #353687;
+  font-size: 21px;
+}
+
+.topblock-ratings_item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 17px 0;
+  color: #fff;
+  transition: .2s background;
+
+  &:first-child {
+    border-bottom: 1px solid #353687;
+
+    a {
+      font-size: 16px;
+      color: #abb4bb;
+    }
+  }
+
+  &:first-child + * {
+    color: #abb4bb;
+    font-size: 16px;
+  }
+
+  span {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  strong {
+    color: #00cc99;
+  }
+}
+
+@mixin bp tablet {
+  .topblock-ratings {
+    display: flex;
+    line-height: 30px;
+  }
+
+  .topblock-ratings_item {
+    width: 50%;
+    border-bottom: none;
+  }
+
+  .topblock-ratings_item {
+    border-right: 1px solid #353687;
+  }
+
+  .topblock-ratings_item:last-child {
+    border-right: none;
+  }
+}

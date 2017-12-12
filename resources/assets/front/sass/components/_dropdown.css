@@ -1,0 +1,53 @@
+.dropdown {
+  position: relative;
+
+  .title {
+    padding-right: 20px;
+    cursor: pointer;
+    position: relative;
+
+    &:after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 8px;
+      right: 3px;
+      height: 6px;
+      width: 6px;
+      border: 1px solid $red;
+      border-left-color: transparent;
+      border-top-color: transparent;
+      transform: rotate(45deg);
+      transition: transform .2s ease;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &.opened {
+    .title {
+      &:after {
+        top: 12px;
+        transform: rotate(-135deg);
+      }
+    }
+    .dropdown-menu {
+      max-height: 1000px;
+    }
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+  overflow: hidden;
+  margin: 0;
+  max-height: 0;
+  transition: max-height 0.2s;
+  text-align: right;
+}
+

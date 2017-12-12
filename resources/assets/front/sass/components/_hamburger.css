@@ -1,0 +1,94 @@
+$height-icon: 18px;
+$width-line: 25px;
+$height-line: 4px;
+
+$transition-time: 0.4s;
+$rotation: 45deg;
+$translateY: (calc($height-icon / 2));
+$translateX: 0;
+
+.hamburger-icon {
+  display: inline-block;
+  opacity: 1;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  .line {
+    position: relative;
+    display:block;
+    background:#fff;
+    width: $width-line;
+    height: $height-line;
+    transition: all $transition-time;
+
+    &:not(:first-child) {
+      margin-top: 5px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    .line-1 {
+      transform: translateY(calc($height-line / 2 * -1));
+    }
+    .line-3 {
+      transform: translateY(calc($height-line / 2));
+    }
+  }
+
+  &.active {
+    position: fixed;
+    .line {
+      background: $red;
+    }
+    .line-1 {
+      transform: translateY($translateY) translateX($translateX) rotate($rotation);
+    }
+    .line-2 {
+      opacity:0;
+    }
+    .line-3 {
+      transform: translateY(calc($translateY * -1)) translateX($translateX) rotate(calc($rotation * -1));
+    }
+  }
+}
+
+.sticky-top {
+  &.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 4;
+    display: block;
+
+    .hamburger-icon {
+      position: relative;
+      float: right;
+      display: block;
+      opacity: 0.8;
+
+      &:before {
+        position: absolute;
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        background: #3434bb;
+        border-radius: 50%;
+        content: '';
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+
+      @mixin bp desktop {
+        top: 50px;
+      }
+    }
+  }
+}

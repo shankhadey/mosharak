@@ -1,0 +1,132 @@
+@import "../../../../node_modules/font-awesome/css/font-awesome.css";
+
+@import "variables";
+@import "mixins";
+@import "base";
+@import "grid";
+@import "fonts";
+
+@import "background-icon";
+
+@import "vendors/slick";
+@import "vendors/intl-tel-input";
+
+@import "components/icons";
+@import "components/dropdown";
+@import "components/tooltip";
+@import "components/hamburger";
+@import "components/mobile-nav";
+@import "components/header";
+@import "components/socials";
+@import "components/buttons";
+/* @import "components/countdown"; */
+@import "components/nav";
+@import "components/logo";
+@import "components/big-title";
+@import "components/get-notifed";
+@import "components/topblock";
+@import "components/main-title";
+@import "components/features";
+@import "components/section-img";
+@import "components/multi-crypto";
+@import "components/invest-in-pro";
+@import "components/become-legal";
+@import "components/issue";
+@import "components/pay-with";
+@import "components/trading-app";
+@import "components/section-devices";
+@import "components/roadmap";
+@import "components/timeline";
+@import "components/technology";
+@import "components/team";
+@import "components/media";
+@import "components/footer";
+
+@import "components/progress";
+@import "components/distribution";
+@import "components/section-fact-sheet";
+@import "components/section-join-crowdsale";
+@import "components/accordion";
+@import "components/tabs";
+@import "components/lang";
+@import "components/modal";
+@import "components/notification";
+@import "components/video";
+@import "components/documentation";
+@import "components/powered-by-logos";
+@import "components/inner-link";
+@import 'components/section-benefits';
+
+.pay-with {
+  margin-top: 110px;
+
+  @mixin bp tablet {
+    margin-top: 125px;
+  }
+}
+
+.section-image-example {
+  @mixin bp tablet {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (max-width: 749px) {
+    .section-img {
+      margin: 0 auto 70px;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}
+
+.section-image-example,
+.pay-with {
+  .text p {
+    color: $gray;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 26px;
+    }
+  }
+}
+
+section {
+  position: relative;
+}
+
+section h1 {
+  margin-bottom: 20px;
+  text-align: center;
+
+  + p {
+    color: $gray-light;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+
+  @mixin bp tablet {
+    margin-bottom: 15px;
+  }
+}
+
+.section {
+  padding: 120px 0;
+
+  @mixin bp tablet {
+    padding: 140px 0;
+  }
+}
+
+#wt-sky-root {
+  display: none !important;
+}
+
+.section-faq {
+  border-top: 1px solid #f6f6f8;
+}

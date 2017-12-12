@@ -1,0 +1,23 @@
+.notification {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 200;
+  width: 200px;
+  margin: 20px;
+  padding: 8px 10px;
+  font-size: 16px;
+  min-height: 40px;
+  border-radius: 10px;
+  background-color: rgba(0, 162, 81, 0.88);
+  color: white;
+
+  &.success {
+    background-color: rgba(0, 162, 81, 0.90);
+  }
+
+  &.error {
+    background-color: rgba(181, 37, 37, 0.81);
+    color: white;
+  }
+}
