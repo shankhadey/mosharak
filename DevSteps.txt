@@ -1,0 +1,5 @@
+Starting point article:
+https://medium.com/@jstubblefield7939/creating-a-single-page-app-with-angularjs-f9e18624d94d
+https://medium.com/@jstubblefield7939/part-ii-front-end-creating-a-single-page-application-with-angularjs-719192b27bd
+
+https://launchschool.com/blog/how-to-install-postgresql-on-a-mac

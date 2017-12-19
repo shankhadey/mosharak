@@ -1,4 +1,4 @@
-angular.module('halp-desk.factories', [])
+angular.module('mosharak.factories', [])
 
 .factory('Tickets', function ($http) {
 

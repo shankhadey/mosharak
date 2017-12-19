@@ -1,4 +1,4 @@
-angular.module('halp-desk.open', [])
+angular.module('mosharak.open', [])
 
 .controller('OpenController', function ($scope, $location, $route, Tickets) {
   $scope.data = {};

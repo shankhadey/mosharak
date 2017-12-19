@@ -1,25 +1,26 @@
 {
-  "name": "halp-desk",
+  "name": "mosharak",
   "version": "1.0.0",
-  "description": "A help desk application for peer-to-peer support",
+  "description": "Mosharak website",
   "main": "client/app.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JStubb7939/halp-desk.git"
+    "url": "git+https://github.com/shankhadey/mosharak.git"
   },
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install",
     "start": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Jordan Stubblefield",
+  "author": "Shankha S. Dey",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.1",
+    "bower": "1.8.2",
     "express": "^4.15.2",
     "pg": "^6.1.4"
   },
   "engines": {
-    "node": "6.2.0"
+    "node": "9.3.0"
   }
 }

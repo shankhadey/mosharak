@@ -1,6 +1,4 @@
-# Halp Desk #
-  > Halp, I'm Stuck! The helpdesk app for Hack Reactor peer support
-
+# Mosharak #
 <!--
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
 
@@ -18,25 +16,24 @@ Once the project moves into development, the press release can be used as a touc
  -->
 
 ## Target Audience ##
-  > Hack Reactor students can already elevate problems to Hackers In Residence. Now they can submit tickets to their peers first.
+
 
 ## Summary ##
-  > Hack Reactor students use Slack for everything communication, including appealing to their peers for tech support. This results in a very cluttered slack that is difficult to follow if you are checking in on posted issues. Enter the Halp Desk, where students can submit helpdesk tickets for their peers to solve in an atmosphere dedicated to organizing those requests and removing the confusion as to the status of the issue. Students can submit tickets and other students can view the issue and offer support. The student who created the ticket can then close the ticket when resolved and no one will have to question as to whether it is still an issue. It will also offer a database students can search if they come across an issue again, thus creating a stack overflow of sorts over time.
+
 
 ## Problem ##
-  > Hack Reactor students are always slacking their problems and appealing to their peers for support. It is difficult, however, to tell if an issue has been resolved and it clutters the Slack channel.
+
 
 ## Solution ##
-  > By moving the peer-support communication out of Slack, the clutter in Slack will be alleviated. Creating an interface that allows users to see if issues are still issues, it will also alleviate the confusion that comes with text messaging due to lack of details.
 
-## Quote from the CEO ##
-  > "You've been using peer-support since you arrived. Get ready to do it better."
+
+## Quote from the SLT ##
+
 
 ## How to Get Started ##
-  > To get started, all you have to do is log in and post your requests. It could not be simpler.
+
 
 ## What the Customers are Saying ##
-  > "I've been asking for halp for weeks but now I feel like I'm truly getting the halp I need. Thanks Halp Desk!"
+
 
 ## Next Steps ##
-  > Log in and get to posting!

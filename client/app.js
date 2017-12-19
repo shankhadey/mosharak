@@ -1,7 +1,7 @@
-angular.module('halp-desk', [
-  'halp-desk.factories',
-  'halp-desk.open',
-  'halp-desk.archive',
+angular.module('mosharak', [
+  'mosharak.factories',
+  'mosharak.open',
+  'mosharak.archive',
   'ngRoute'
 ])
 .config(function ($routeProvider) {
@@ -14,10 +14,10 @@ angular.module('halp-desk', [
     templateUrl: './open/open.html',
     controller: 'OpenController'
   })
-  .when('/archive', {
+  /*.when('/archive', {
     templateUrl: './archive/archive.html',
     controller: 'ArchiveController'
-  })
+  })*/
   .otherwise({
     redirectTo: '/open'
   });

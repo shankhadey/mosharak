@@ -1,4 +1,4 @@
-angular.module('halp-desk.archive', [])
+angular.module('mosharak.archive', [])
 
 .controller('ArchiveController', function ($scope, $location, $route, Tickets) {
   $scope.data = {};
